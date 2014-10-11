@@ -206,12 +206,18 @@ table {
 
 th {
   font-weight: 500;
+  border: 0;
+}
+
+tr {
+  border: 0;
 }
 
 td {
   border: 1px solid #ebebeb;
   text-align: left;
   font-weight: 300;
+  border: 0;
 }
 
 form {
