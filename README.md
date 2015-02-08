@@ -1,4 +1,1 @@
-slacathon
-=========
-
-Slac-athon website and projects
+Olin's Slacathon Website
