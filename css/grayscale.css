@@ -23,11 +23,12 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 100%;
+    font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: -0.959999978542328px;
+    -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -138,8 +139,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background-color: #add8e6;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -166,7 +166,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 40px;
     }
 
     .intro .intro-body .intro-text {
