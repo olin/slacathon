@@ -15,13 +15,6 @@ a:hover {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1125px) {
-	#logo {
-	  width: 400px;
-	  margin: 0 auto;
-	}
-}
-
 #dateLocation {
 	font-weight: 300;
 	font-size: 18pt;
@@ -31,20 +24,21 @@ a:hover {
 .nextPage {
 	position: absolute;
 	left: 50%;
-	bottom: 0;
+	bottom: -20px;
 	width: 240px;
 	margin-left: -120px;
-	height: 50px;
+	height: 70px;
 	font-size: 14pt;
 	padding-top: 10px;
 	transition: .3s;
 	color: #fff;
 	background-color: #d01d39;
+	z-index: 99999999;
 }
 
 .nextPage:hover {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	height: 60px;
+	height: 90px;
 	transition: .3s;
 	cursor: pointer;
 }
@@ -136,4 +130,15 @@ a:hover {
 	opacity: 1;
 	transition: .3s;	
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@media screen and (max-width: 1125px) {
+	#logo {
+	  width: 400px;
+	  margin: 0 auto;
+	}
+
+	.topbar {
+		opacity: .1;
+	}
 }
