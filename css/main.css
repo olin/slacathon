@@ -1,0 +1,144 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.shadow1 {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#logo {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#dateLocation {
+	font-weight: 300;
+	font-size: 18pt;
+	margin-top: 20px;
+}
+
+.nextPage {
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	width: 240px;
+	margin-left: -120px;
+	height: 70px;
+	font-size: 14pt;
+	padding-top: 10px;
+	transition: .3s;
+	color: #fff;
+	background-color: #d01d39;
+	z-index: 99999999;
+}
+
+.nextPage:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	height: 90px;
+	transition: .3s;
+	cursor: pointer;
+}
+
+#whatSpecial {
+	background-color: #f47921;
+	color: #fff;
+}
+
+#faqButton {
+	background-color: #24aaa5;
+	color: #fff;
+}
+
+#homeButton {
+	background-color: #000;
+	color: #fff;
+}
+
+#whatSlackathon {
+	background-color: #d01d39;
+	color: #fff;
+}
+
+#about, #faq{
+  background-image: url("../img/whitemamba.png");
+  color: #000;
+}
+
+#signUpButton {
+	background-color: #c77db4;
+	color: #fff;
+}
+
+#aboutDescription {
+	/*text-align: left;*/
+	text-align: justify;
+  text-justify: inter-word;
+	width: 500px;
+	margin: 0 auto;
+	font-size: 12pt;
+	line-height: 200%;
+}
+
+.h4Faq {
+	text-align: left;
+	width: 500px;
+	margin: 0 auto;
+	line-height: 200%;
+	font-weight: bold;
+}
+
+.faqAnswer {
+	/*text-align: left;*/
+	text-align: justify;
+  text-justify: inter-word;
+	width: 500px;
+	margin: 0 auto;
+	font-size: 12pt;
+	line-height: 200%;
+}
+
+#hoverToolbar {
+	position: fixed;
+	z-index: 999999999;
+	/*width: 100%;*/
+	width: 230px;
+	height: 120px;
+	margin-left: -210px;
+	transition: .3s;
+}
+
+#hoverToolbar:hover {
+	margin-left: 0px;
+	transition: .3s;
+}
+
+.topbar {
+	padding: 20px;
+	margin-bottom: 1px;
+	text-align: right;
+	font-size: 12pt;
+	font-weight: bold;
+	opacity: .5;
+	transition: .3s;
+}
+
+.topbar:hover {
+	opacity: 1;
+	transition: .3s;	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+@media screen and (max-width: 1125px) {
+	#logo {
+	  width: 400px;
+	  margin: 0 auto;
+	}
+
+	.topbar {
+		opacity: .1;
+	}
+}
