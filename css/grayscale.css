@@ -4,10 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+
     color: #fff;
     background-color: #000;
 }
@@ -24,7 +28,6 @@ h4,
 h5,
 h6 {
     font-size: 100%;
-    font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
     font-weight: 200;
     color: #fff;
     letter-spacing: -0.959999978542328px;
@@ -66,7 +69,6 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #000;
 }
 
@@ -139,11 +141,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background-color: #add8e6;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-image: url("../img/blackmamba.png");
 }
 
 .intro .intro-body {
@@ -374,7 +372,6 @@ a:focus {
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
