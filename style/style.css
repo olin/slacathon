@@ -1,0 +1,132 @@
+/* 
+ *  RESET THE BROWSER TO UNIFORM
+ *  http://meyerweb.com/eric/tools/css/reset/ 
+ *  v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/**
+ * BEGIN CUSTOM CSS HERE
+ * Kai Austin, Spring 2015
+ */
+
+body {
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+img {
+	display:block;
+	margin: 0 auto;
+}
+.parallax-window {
+	height: 100%;
+	min-height: 46em;
+    background: transparent;
+}
+
+#splash {
+	padding: 2em;
+}
+#what-is div {
+	background: url('../assets/backdrops/whatisslacfest_opaque.png');
+	padding: 2em 5em;
+}
+#schedule div {
+	position: relative;
+	top: 20%;
+	background: url('../assets/backdrops/schedule_transluscent.png');
+	padding: 2em 5em;
+}
+#sponsers div {
+	background: url('../assets/backdrops/sponsors_opaque.png');
+	padding: 2em 5em;
+}
+#register > div {
+	position: relative;
+	top: 20%;
+	background: url('../assets/backdrops/register_transluscent.png');
+	padding: 2em 5em;
+}
+
+h2 {
+  padding: 1em;
+  font-weight: 800;
+  font-size: 2.4em;
+  letter-spacing: 0.1em;
+}
+
+p {
+  padding: 1em 0;
+  letter-spacing: 0.1em;
+  line-height: 1.1em;
+  font-size: 1.2em;
+}
+
+.reg-button {
+	background: url('../assets/register_buttons/Register Button Default.png') no-repeat;
+	margin: 1em auto 0;
+	background-size: 15em 2.5em;
+	width: 15em;
+	height: 2.5em;
+}
+.reg-button:hover {
+	background: url('../assets/register_buttons/Register-Button-Hover.png') no-repeat;
+	background-size: 15em 2.5em;
+	cursor: pointer;
+}
+.reg-typeform-button {
+	  background: url('../assets/register_buttons/Register-on-typeform.png') no-repeat;
+	  margin: 1em auto 0;
+	  background-size: 19em 2.3em;
+	  width: 19em;
+	  height: 2.5em;
+}
+.reg-typeform-button:hover {
+	background: url('../assets/register_buttons/Register-on-typeform-hover.png') no-repeat;
+	background-size: 19em 2.3em;
+	cursor: pointer;
+}
+.arrow {
+  margin-top: 3em;
+  width: 3em;
+}
+.icon {
+	width: 3em;
+}
+
