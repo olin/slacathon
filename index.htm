@@ -7,12 +7,12 @@
 		href="assets/stay_late_create/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='style/style.css' rel='stylesheet'/>
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="scripts/parallax.min.js"></script>
 	<script>
 		$(document).ready(function (){
-			
+
 			function scrollTo(nextId){
 				$('html, body').animate({
 			        scrollTop: $(nextId).offset().top
@@ -25,7 +25,7 @@
 			        scrollTop: adjust
 			    }, 1000);
 			}
-			
+
 			$("#to-what-is").click(function() {
 			    scrollToAdjust("#what-is");
 			});
@@ -40,7 +40,7 @@
 			});
 		});
 	</script>
-	
+
 	<title>SLACFEST | Olin College of Engineering</title>
 </head>
 <body>
@@ -69,15 +69,29 @@
 		<div>
 			<img class='icon' src='assets/section_icons/schedule.png'/>
 			<h2>SCHEDULE:</h2>
-			<ul>
-				<li>8:00 AM <span>Check In & Hangout</span></li>
-				<li>8:30 AM <span>Opening Ceremony</span></li>
-				<li>9:30 AM <span>Creating Begins</span></li>
-				<li>12:00 PM <span>LUNCH</span></li>
-				<li>7:00 PM <span>Dinner</span></li>
-				<li>10:00 PM <span>Expo & Awards</span></li>
-				<li>11:30PM <span>GoodBye</span></li>
-			</ul>
+			<table class="schedule">
+				<tr>
+					<td class="title">Check In &amp; Hangout</td><td class="time">8:00AM</td>
+				</tr>
+				<tr>
+					<td class="title">Opening Ceremony</td><td class="time">8:30AM</td>
+				</tr>
+				<tr>
+					<td class="title">Creating Begins</td><td class="time">9:30AM</td>
+				</tr>
+				<tr>
+					<td class="title">Lunch</td><td class="time">12:00 PM</td>
+				</tr>
+				<tr>
+					<td class="title">Dinner</td><td class="time">7:00 PM</td>
+				</tr>
+				<tr>
+					<td class="title">Expo &amp; Awards</td><td class="time">10:00PM</td>
+				</tr>
+				<tr>
+					<td class="title">GoodBye</td><td class="time">11:30PM</td>
+				</tr>
+			</table>
 			<img id='to-sponsors' class='arrow' src='assets/arrows/arrow3.png'/>
 		</div>
 	</section>
@@ -86,6 +100,17 @@
 		<div>
 			<img class='icon' src='assets/section_icons/sponsors.png'/>
 			<h2>OUR SPONSORS:</h2>
+			<table>
+			<tr>
+				<td class="sponsor-logo"><img id="microsoft_logo" src="assets/sponsors/microsoft.png"/></td>
+				<td class="sponsor-logo"><img id="rdv_logo" src="assets/sponsors/rdv.png"/></td>
+			</tr>
+			<tr>
+				<td class="sponsor-logo"><img id="pivotal_logo" src="assets/sponsors/pivotal.png"/></td>
+				<td class="sponsor-logo"><img id="tm_logo" src="assets/sponsors/technicalmachine.png"/></td>
+			</tr>
+			</table>
+			<img id="olin_logo" src="assets/sponsors/olin.png"/>
 			<img id='to-register' class='arrow' src='assets/arrows/arrow4.png'/>
 		</div>
 	</section>

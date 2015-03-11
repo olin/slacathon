@@ -108,23 +108,6 @@ p.main-par {
 	font-size: 1.35em;
 }
 
-ul {
-	text-align: left;
-	text-transform:uppercase;
-	  padding: 0 5em;
-}
-li {
-	position: relative;
-	font-size: 1.2em;
-	line-height: 1.5em;
-	font-weight: 700;
-}
-li span {
-  position: absolute;
-  left: 7em;
-  font-weight: 300;
-}
-
 a.reg-button {
   display: inline-block;
   margin-top: 0.4em;
@@ -152,18 +135,49 @@ a.reg-button {
 	width: 3em;
 }
 
-table {
+.schedule {
 	margin: auto;
 	border-spacing: 100px 10px
 }
 
 .time {
 	font-size: 1.5em;
-	text-align: right
+	text-align: right;
+	text-transform:uppercase;
 }
 
 .title {
 	font-size: 1.5em;
-	text-align: left
+	text-align: left;
+	text-transform:uppercase;
 }
+
+table {
+	margin: auto;
+}
+
+.sponsor-logo {
+	vertical-align: middle;
+	align: center;
+}
+
+#microsoft_logo {
+	width:400px;
+	float: left;
+}
+#rdv_logo {
+	height:100px;
+}
+#pivotal_logo {
+	float: right;
+	margin-right: 10px
+}
+#olin_logo {
+	width: 150px;
+}
+#tm_logo {
+	float: left;
+}
+
+
 
