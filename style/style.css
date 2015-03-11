@@ -98,10 +98,9 @@ h2 {
 
 p {
   padding: 1em 0;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
+  line-height: 1.2em;
   word-spacing: 5px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 100;
 }
 
@@ -125,12 +124,13 @@ li span {
 a.reg-button {
   display: inline-block;
   margin-top: 0.4em;
-  padding: 0.2em 2em;
-  font-size: 1.5em;
+  padding: 0.5em 2.2em;
+  font-size: 1.2em;
   color: #FFDD55;
   text-decoration: none;
   border: #FFDD55 1px solid;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 .reg-button:hover {
 	background: #FFDD55;
