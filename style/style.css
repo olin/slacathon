@@ -103,6 +103,10 @@ p {
   font-size: 1.2em;
   font-weight: 100;
 }
+p.main-par {
+	word-spacing: 1px;
+	font-size: 1.35em;
+}
 
 ul {
 	text-align: left;
