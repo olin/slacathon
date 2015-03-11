@@ -5,10 +5,44 @@
 		rel="icon"
 		type="image/png"
 		href="assets/stay_late_create/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='style/style.css' rel='stylesheet'/>
-
-	<title>SLACTFEST | Olin College of Engineering</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="scripts/parallax.min.js"></script>
+	<script>
+		$(document).ready(function (){
+			
+			function scrollTo(nextId){
+				$('html, body').animate({
+			        scrollTop: $(nextId).offset().top
+			    }, 2000);
+			}
+			function scrollToAdjust(nextId){
+				//Getting location of the element minus the height offset to center
+				var adjust = $(nextId).offset().top - $(window).height() * 0.2;
+				console.log(adjust);
+				$('html, body').animate({
+			        scrollTop: adjust
+			    }, 2000);
+			}
+			
+			$("#to-what-is").click(function() {
+			    scrollToAdjust("#what-is");
+			});
+			$("#to-schedule").click(function() {
+			    scrollTo("#schedule");
+			});
+			$("#to-sponsers").click(function() {
+			    scrollToAdjust("#sponsers");
+			});
+			$("#to-register").click(function() {
+			    scrollTo("#register");
+			});
+		});
+	</script>
+	
+	<title>SLACFEST | Olin College of Engineering</title>
 </head>
 <body>
 
@@ -18,8 +52,8 @@
 		<p>PRESENTS</p>
 		<img src='assets/slacfest_title/SlacFestwithLines.png'/>
 		<p>SATURDAY, MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
-		<a href="https://slacathon.typeform.com/to/wetCPM"><div class='reg-button'></div></a>
-		<a href="#what-is" class="smoothScroll"><img class='arrow' src='assets/arrows/arrow1.png'></a>
+		<a href='https://slacathon.typeform.com/to/wetCPM' class='reg-button'>Register</a>
+		<img id='to-what-is' class='arrow' src='assets/arrows/arrow1.png'/>
 	</section>
 
 
@@ -28,7 +62,7 @@
 			<img class='icon' src='assets/section_icons/whatisslacfest.png'/>
 			<h2>WHAT IS SLACFEST?</h2>
 			<p>SLACfest is Olin College&#39;s first official design, creativity, and making marathon, hosted by Olin&#39;s Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects of all types. In the spirit of SLAC, this first SLACfest will be focused on community building.</p>
-			<a href="#schedule" class="smoothScroll"><img class='arrow' src='assets/arrows/arrow2.png'/></a>
+			<img id='to-schedule' class='arrow' src='assets/arrows/arrow2.png'/>
 		</div>
 	</section>
 
@@ -36,30 +70,16 @@
 		<div>
 			<img class='icon' src='assets/section_icons/schedule.png'/>
 			<h2>SCHEDULE:</h2>
-			<table>
-				<tr>
-					<td class="title">Check In &amp; Hangout</td><td class="time">8:00AM</td>
-				</tr>
-				<tr>
-					<td class="title">Opening Ceremony</td><td class="time">8:30AM</td>
-				</tr>
-				<tr>
-					<td class="title">Creating Begins</td><td class="time">9:30AM</td>
-				</tr>
-				<tr>
-					<td class="title">Lunch</td><td class="time">12:00 PM</td>
-				</tr>
-				<tr>
-					<td class="title">Dinner</td><td class="time">7:00 PM</td>
-				</tr>
-				<tr>
-					<td class="title">Expo &amp; Awards</td><td class="time">10:00PM</td>
-				</tr>
-				<tr>
-					<td class="title">GoodBye</td><td class="time">11:30PM</td>
-				</tr>
-			</table>
-			<a href="#sponsors" class="smoothScroll"><img class='arrow' src='assets/arrows/arrow3.png'/></a>
+			<ul>
+				<li>8:00 AM <span>Check In & Hangout</span></li>
+				<li>8:30 AM <span>Opening Ceremony</span></li>
+				<li>9:30 AM <span>Creating Begins</span></li>
+				<li>12:00 PM <span>LUNCH</span></li>
+				<li>7:00 PM <span>Dinner</span></li>
+				<li>10:00 PM <span>Expo & Awards</span></li>
+				<li>11:30PM <span>GoodBye</span></li>
+			</ul>
+			<img id='to-sponsers' class='arrow' src='assets/arrows/arrow3.png'/>
 		</div>
 	</section>
 
@@ -67,7 +87,7 @@
 		<div>
 			<img class='icon' src='assets/section_icons/sponsors.png'/>
 			<h2>OUR SPONSORS:</h2>
-			<a href="#register" class="smoothScroll"><img class='arrow' src='assets/arrows/arrow4.png'/></a>
+			<img id='to-register' class='arrow' src='assets/arrows/arrow4.png'/>
 		</div>
 	</section>
 
@@ -75,7 +95,7 @@
 		<div>
 			<img class='icon' src='assets/section_icons/register.png'/>
 			<h2>READY TO PARTICIPATE?</h2>
-			<a href="https://slacathon.typeform.com/to/wetCPM"><div class='reg-typeform-button'></div></a>
+			<a href='https://slacathon.typeform.com/to/wetCPM' class='reg-button'>Register on Typeform</a>
 		</div>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
