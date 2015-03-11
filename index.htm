@@ -21,7 +21,6 @@
 			function scrollToAdjust(nextId){
 				//Getting location of the element minus the height offset to center
 				var adjust = $(nextId).offset().top - $(window).height() * 0.2;
-				console.log(adjust);
 				$('html, body').animate({
 			        scrollTop: adjust
 			    }, 2000);
