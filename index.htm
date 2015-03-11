@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<link
+		rel="icon"
+		type="image/png"
+		href="assets/stay_late_create/favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='style/style.css' rel='stylesheet'/>
 	
@@ -19,7 +21,6 @@
 			function scrollToAdjust(nextId){
 				//Getting location of the element minus the height offset to center
 				var adjust = $(nextId).offset().top - $(window).height() * 0.2;
-				console.log(adjust);
 				$('html, body').animate({
 			        scrollTop: adjust
 			    }, 2000);
@@ -43,27 +44,27 @@
 	<title>SLACFEST | Olin College of Engineering</title>
 </head>
 <body>
-	
+
 	<section id='splash' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero1.jpg">
 		<img src='assets/small_logo/logo120x120.png'/>
 		<img src='assets/stay_late_create/stay-late-create.png'/>
 		<p>PRESENTS</p>
 		<img src='assets/slacfest_title/SlacFestwithLines.png'/>
-		<p>MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
+		<p>SATURDAY, MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
 		<a href='https://slacathon.typeform.com/to/wetCPM' class='reg-button'>Register</a>
 		<img id='to-what-is' class='arrow' src='assets/arrows/arrow1.png'/>
 	</section>
-	
-	
+
+
 	<section id='what-is'>
 		<div>
 			<img class='icon' src='assets/section_icons/whatisslacfest.png'/>
 			<h2>WHAT IS SLACFEST?</h2>
-			<p>SLACfest is Olin College’s first official design, hacking, and making marathon, hosted by Olin’s dedicated Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects. In the spirit of SLAC, this first SLACfest will be focused on community building.</p>
+			<p>SLACfest is Olin College&#39;s first official design, creativity, and making marathon, hosted by Olin&#39;s Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects of all types. In the spirit of SLAC, this first SLACfest will be focused on community building.</p>
 			<img id='to-schedule' class='arrow' src='assets/arrows/arrow2.png'/>
 		</div>
 	</section>
-	
+
 	<section id='schedule' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero2.jpg">
 		<div>
 			<img class='icon' src='assets/section_icons/schedule.png'/>
@@ -80,8 +81,8 @@
 			<img id='to-sponsers' class='arrow' src='assets/arrows/arrow3.png'/>
 		</div>
 	</section>
-	
-	<section id='sponsers'>
+
+	<section id='sponsors'>
 		<div>
 			<img class='icon' src='assets/section_icons/sponsors.png'/>
 			<h2>OUR SPONSORS:</h2>
@@ -96,6 +97,8 @@
 			<a href='https://slacathon.typeform.com/to/wetCPM' class='reg-button'>Register on Typeform</a>
 		</div>
 	</section>
-	
-</body>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="scripts/parallax.min.js"></script>
+	<script src="scripts/easyscroll.js"></script>
+</body>
 </html>
