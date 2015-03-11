@@ -1,6 +1,6 @@
-/* 
+/*
  *  RESET THE BROWSER TO UNIFORM
- *  http://meyerweb.com/eric/tools/css/reset/ 
+ *  http://meyerweb.com/eric/tools/css/reset/
  *  v2.0 | 20110126
  *  License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,10 +26,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	background:black;
+}
+
 html, body {
 	height: 100%;
 }
@@ -47,7 +52,7 @@ ol, ul {
 
 body {
 	color: white;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', Helvetica, sans-serif;
 	text-align: center;
 }
 img {
@@ -73,7 +78,7 @@ img {
 	background: url('../assets/backdrops/schedule_transluscent.png');
 	padding: 2em 5em;
 }
-#sponsers div {
+#sponsors div {
 	background: url('../assets/backdrops/sponsors_opaque.png');
 	padding: 2em 5em;
 }
@@ -94,8 +99,10 @@ h2 {
 p {
   padding: 1em 0;
   letter-spacing: 0.1em;
-  line-height: 1.1em;
-  font-size: 1.2em;
+  line-height: 1.5em;
+  word-spacing: 5px;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 .reg-button {
@@ -125,6 +132,10 @@ p {
 .arrow {
   margin-top: 3em;
   width: 3em;
+}
+
+.arrow:hover {
+	cursor: pointer;
 }
 .icon {
 	width: 3em;
