@@ -96,12 +96,21 @@ h2 {
   letter-spacing: 0.1em;
 }
 
-p {
+#slacfest {
   padding: 1em 0;
   letter-spacing: 0.1em;
   line-height: 1.5em;
   word-spacing: 5px;
   font-size: 1.5em;
+  font-weight: 100;
+}
+
+
+p {
+  padding: 1em 0;
+  line-height: 1.2em;
+  word-spacing: 5px;
+  font-size: 1.2em;
   font-weight: 100;
 }
 
