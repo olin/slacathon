@@ -74,7 +74,7 @@ img {
 }
 #schedule div {
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: url('../assets/backdrops/schedule_transluscent.png');
 	padding: 2em 5em;
 }
@@ -139,5 +139,20 @@ p {
 }
 .icon {
 	width: 3em;
+}
+
+table {
+	margin: auto;
+	border-spacing: 100px 10px
+}
+
+.time {
+	font-size: 1.5em;
+	text-align: right
+}
+
+.title {
+	font-size: 1.5em;
+	text-align: left
 }
 
