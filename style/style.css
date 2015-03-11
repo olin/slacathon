@@ -59,6 +59,11 @@ img {
 	display:block;
 	margin: 0 auto;
 }
+
+.logo {
+    width:120px;
+    height:120px;
+}
 .parallax-window {
 	height: 100%;
 	min-height: 46em;
