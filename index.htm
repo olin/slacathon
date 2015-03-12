@@ -33,7 +33,7 @@
 			    scrollTo("#schedule");
 			});
 			$("#to-sponsors").click(function() {
-			    scrollToAdjust("#sponsors");
+			    scrollTo("#sponsors");
 			});
 			$("#to-register").click(function() {
 			    scrollTo("#register");
@@ -83,13 +83,13 @@
 					<td class="title">Lunch</td><td class="time">12:00PM</td>
 				</tr>
 				<tr>
-					<td class="title">Diner</td><td class="time">7:00PM</td>
+					<td class="title">Community Dinner</td><td class="time">7:00PM</td>
 				</tr>
 				<tr>
 					<td class="title">Expo &amp; Awards</td><td class="time">10:00PM</td>
 				</tr>
 				<tr>
-					<td class="title">GooodBye</td><td class="time">11:30PM</td>
+					<td class="title">GoodBye</td><td class="time">11:30PM</td>
 				</tr>
 			</table>
 			<img id='to-sponsors' class='arrow' src='assets/arrows/arrow3.png'/>
@@ -99,18 +99,21 @@
 	<section id='sponsors'>
 		<div>
 			<img class='icon' src='assets/section_icons/sponsors.png'/>
-			<h2>OUR SPONSORS:</h2>
+			<h2 id="darkfont">OUR SPONSORS:</h2>
 			<table>
-			<tr>
-				<td class="sponsor-logo"><img id="microsoft_logo" src="assets/sponsors/microsoft.png"/></td>
-				<td class="sponsor-logo"><img id="rdv_logo" src="assets/sponsors/rdv.png"/></td>
-			</tr>
-			<tr>
-				<td class="sponsor-logo"><img id="pivotal_logo" src="assets/sponsors/pivotal.png"/></td>
-				<td class="sponsor-logo"><img id="tm_logo" src="assets/sponsors/technicalmachine.png"/></td>
-			</tr>
+				<tr>
+					<td class="sponsor-logo"><a href="http://www.microsoft.com/en-us/default.aspx"><img class = "sponsor" src="assets/sponsors/MSFT.png"/></a></td>
+					<td class="sponsor-logo"><a href="http://roughdraft.vc/"><img id="rdv-logo" class = "sponsor" src="assets/sponsors/rdv.png"/></a></td>
+				</tr>
+				<tr>
+					<td class="sponsor-logo"><a href="http://pivotallabs.com/"><img id="pivotal-logo" class = "sponsor" src="assets/sponsors/pivotal.png"/></a></td>
+					<td class="sponsor-logo"><a href="https://tessel.io/"><img id="tm-logo" class = "sponsor" src="assets/sponsors/TM.png"/></a></td>
+				</tr>
+				<tr>
+					<td class="sponsor-logo"><a href="http://olinfoundry.org/"><img class = "sponsor" src="assets/sponsors/foundry.png"/></a></td>
+					<td class="sponsor-logo"><a href="http://www.olin.edu/"><img class = "sponsor" src="assets/sponsors/olin.png"/></a></td>
+				</tr>
 			</table>
-			<img id="olin_logo" src="assets/sponsors/olin.png"/>
 			<img id='to-register' class='arrow' src='assets/arrows/arrow4.png'/>
 		</div>
 	</section>

@@ -84,6 +84,7 @@ img {
 	padding: 2em 5em;
 }
 #sponsors div {
+    top:10%;
 	background: url('../assets/backdrops/sponsors_opaque.png');
 	padding: 2em 5em;
 }
@@ -166,22 +167,26 @@ table {
 	align: center;
 }
 
-#microsoft_logo {
-	width:400px;
-	float: left;
+.sponsor {
+    height: 25%;
+    padding:10px;
 }
-#rdv_logo {
+
+#rdv-logo {
 	height:100px;
 }
-#pivotal_logo {
-	float: right;
-	margin-right: 10px
+
+#pivotal-logo {
+    height:100px;
 }
-#olin_logo {
-	width: 150px;
+
+#tm-logo {
+    height: 100px;
 }
-#tm_logo {
-	float: left;
+
+#darkfont {
+    color: black;
+    /*font-size: xx-large;*/
 }
 
 
