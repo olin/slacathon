@@ -84,7 +84,6 @@ img {
 	padding: 2em 5em;
 }
 #sponsors div {
-    top:10%;
 	background: url('../assets/backdrops/sponsors_opaque.png');
 	padding: 2em 5em;
 }
@@ -168,8 +167,15 @@ table {
 }
 
 .sponsor {
-    height: 25%;
+    height: 20%;
+    width: auto;
     padding:10px;
+}
+
+@-moz-document url-prefix() {
+    .sponsor {
+    height: 50px;
+}
 }
 
 #rdv-logo {
