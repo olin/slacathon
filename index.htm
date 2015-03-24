@@ -1,132 +1,239 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link
-		rel="icon"
-		type="image/png"
-		href="assets/stay_late_create/favicon.ico">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-	<link href='style/style.css' rel='stylesheet'/>
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/stay_late_create/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='style/style.css' rel='stylesheet'/>
+    <link href='style/grid.css' rel='stylesheet'/>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="scripts/parallax.min.js"></script>
-	<script>
-		$(document).ready(function (){
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script>
+        $(document).ready(function (){
 
-			function scrollTo(nextId){
-				$('html, body').animate({
-			        scrollTop: $(nextId).offset().top
-			    }, 1000);
-			}
-			function scrollToAdjust(nextId){
-				//Getting location of the element minus the height offset to center
-				var adjust = $(nextId).offset().top - $(window).height() * 0.2;
-				$('html, body').animate({
-			        scrollTop: adjust
-			    }, 1000);
-			}
+            function scrollTo(nextId){
+                $('html, body').animate({
+                    scrollTop: $(nextId).offset().top
+                }, 1000);
+            }
+            function scrollToAdjust(nextId){
+                //Getting location of the element minus the height offset to center
+                var adjust = $(nextId).offset().top - $(window).height() * 0.2;
+                $('html, body').animate({
+                    scrollTop: adjust
+                }, 1000);
+            }
 
-			$("#to-what-is").click(function() {
-			    scrollToAdjust("#what-is");
-			});
-			$("#to-schedule").click(function() {
-			    scrollTo("#schedule");
-			});
-			$("#to-sponsors").click(function() {
-			    scrollTo("#sponsors");
-			});
-			$("#to-register").click(function() {
-			    scrollTo("#register");
-			});
-		});
-	</script>
+            $("#to-what-is").click(function() {
+                scrollToAdjust("#what-is");
+            });
+            $('#to-activities').click(function() {
+                scrollTo("#activities");
+            });
+            $('#to-faq').click(function() {
+                scrollToAdjust("#faq");
+            });
+            $("#to-schedule").click(function() {
+                scrollTo("#schedule");
+            });
+            $("#to-sponsors").click(function() {
+                scrollToAdjust("#sponsors");
+            });
+            $("#to-register").click(function() {
+                scrollTo("#register");
+            });
+        });
+    </script>
 
-	<title>SLACFEST | Olin College of Engineering</title>
+    <title>SLACFEST | Olin College of Engineering</title>
 </head>
 <body>
 
-	<section id='splash' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero1.jpg">
-		<img class="logo" src='assets/small_logo/logo960x960.png'/>
-		<img src='assets/stay_late_create/stay-late-create.png'/>
-		<p>PRESENTS</p>
-		<img src='assets/slacfest_title/SlacFestwithLines.png'/>
-		<p>SATURDAY, MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
-		<a href='https://slacfest.typeform.com/to/rgKmrD' class='reg-button'>Register</a>
-		<img id='to-what-is' class='arrow' src='assets/arrows/arrow1.png'/>
-	</section>
+    <section id='splash' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero1.jpg">
+        <img class="logo" src='assets/small_logo/logo960x960.png'/>
+        <img src='assets/stay_late_create/stay-late-create.png'/>
+        <p>PRESENTS</p>
+        <img src='assets/slacfest_title/SlacFestwithLines.png'/>
+        <p>SATURDAY, MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
+        <a href='https://slacfest.typeform.com/to/rgKmrD' class='reg-button'>Register</a>
+        <img id='to-what-is' class='arrow' src='assets/arrows/arrow1.png'/>
+    </section>
 
 
-	<section id='what-is'>
-		<div>
-			<img class='icon' src='assets/section_icons/whatisslacfest.png'/>
-			<h2>WHAT IS SLACFEST?</h2>
-			<p class='main-par'>SLACfest is Olin College&#39;s first official design, creativity, and making marathon, hosted by Olin&#39;s Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects of all types. In the spirit of SLAC, the purpose of this event is to encourage to the community to come together and do awesome things. Come experience the creativity of a community first-hand!</p>
-			<img id='to-schedule' class='arrow' src='assets/arrows/arrow2.png'/>
-		</div>
-	</section>
+    <section id='what-is'>
+        <div>
+            <img class='icon' src='assets/section_icons/whatisslacfest.png'/>
+            <h2>WHAT IS SLACFEST?</h2>
+            <p class='main-par'>SLACfest is Olin College&#39;s first official design, creativity, and making marathon, hosted by Olin&#39;s Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects of all types. In the spirit of SLAC, the purpose of this event is to encourage to the community to come together and do awesome things. Come experience the creativity of a community first-hand!</p>
+            <img id='to-schedule' class='arrow' src='assets/arrows/arrow2.png'/>
+        </div>
+    </section>
 
-	<section id='schedule' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero2.jpg">
-		<div>
-			<img class='icon' src='assets/section_icons/schedule.png'/>
-			<h2>SCHEDULE:</h2>
-			<table class="schedule">
-				<tr>
-					<td class="title">Check In &amp; Hangout</td><td class="time">8:00AM</td>
-				</tr>
-				<tr>
-					<td class="title">Opening Ceremony</td><td class="time">8:30AM</td>
-				</tr>
-				<tr>
-					<td class="title">Creating Begins</td><td class="time">9:30AM</td>
-				</tr>
-				<tr>
-					<td class="title">Lunch</td><td class="time">12:00PM</td>
-				</tr>
-				<tr>
-					<td class="title">Community Dinner</td><td class="time">7:00PM</td>
-				</tr>
-				<tr>
-					<td class="title">Expo &amp; Awards</td><td class="time">10:00PM</td>
-				</tr>
-				<tr>
-					<td class="title">GoodBye</td><td class="time">11:30PM</td>
-				</tr>
-			</table>
-			<img id='to-sponsors' class='arrow' src='assets/arrows/arrow3.png'/>
-		</div>
-	</section>
+    <section id='schedule' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero2.jpg">
+        <div>
+            <img class='icon' src='assets/section_icons/schedule.png'/>
+            <h2>SCHEDULE:</h2>
+            <table class="schedule">
+                <tr>
+                    <td class="title">Check In &amp; Hangout</td><td class="time">8:00AM</td>
+                </tr>
+                <tr>
+                    <td class="title">Opening Ceremony</td><td class="time">8:30AM</td>
+                </tr>
+                <tr>
+                    <td class="title">Creating Begins</td><td class="time">9:30AM</td>
+                </tr>
+                <tr>
+                    <td class="title">Lunch</td><td class="time">12:00PM</td>
+                </tr>
+                <tr>
+                    <td class="title">Community Dinner</td><td class="time">7:00PM</td>
+                </tr>
+                <tr>
+                    <td class="title">Expo &amp; Awards</td><td class="time">10:00PM</td>
+                </tr>
+                <tr>
+                    <td class="title">GoodBye</td><td class="time">11:30PM</td>
+                </tr>
+            </table>
+            <img id='to-faq' class='arrow' src='assets/arrows/arrow4.png'/>
+        </div>
+    </section>
 
-	<section id='sponsors'>
-		<div>
-			<img class='icon' src='assets/section_icons/sponsors.png'/>
-			<h2 id="darkfont">OUR SPONSORS:</h2>
-			<table>
-				<tr>
-					<td class="sponsor-logo left"><a target="_blank" href="http://www.microsoft.com/en-us/default.aspx"><img id="microsoft-logo" class = "sponsor" src="assets/sponsors/MSFT.png"/></a></td>
-					<td class="sponsor-logo right"><a target="_blank" href="http://roughdraft.vc/"><img id="rdv-logo" class = "sponsor" src="assets/sponsors/rdv.png"/></a></td>
-				</tr>
-				<tr>
-					<td class="sponsor-logo left"><a target="_blank" href="http://pivotallabs.com/"><img id="pivotal-logo" class = "sponsor" src="assets/sponsors/pivotal.png"/></a></td>
-					<td class="sponsor-logo right"><a target="_blank" href="https://tessel.io/"><img id="tm-logo" class = "sponsor" src="assets/sponsors/TM.png"/></a></td>
-				</tr>
-				<tr>
-					<td class="sponsor-logo left"><a target="_blank" href="http://olinfoundry.org/"><img class = "sponsor" src="assets/sponsors/foundry.png"/></a></td>
-					<td class="sponsor-logo right"><a target="_blank" href="http://www.olin.edu/"><img class = "sponsor" src="assets/sponsors/olin.png"/></a></td>
-				</tr>
-			</table>
-			<img id='to-register' class='arrow' src='assets/arrows/arrow4.png'/>
-		</div>
-	</section>
+    <section id='faq'>
+        <div>
+            <img class='icon' src='assets/section_icons/whatisslacfest.png'/>
+            <h2 id="faq_id">FAQ</h2>
+            <div class="grid grid-pad">
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_1">
+                    <h3 class="faq_question">Who can come?</h3>
+                    <br>
+                    <span class="faq_answer">Anyone over the age of 18. Invite your friends! Don't forget to register! No need to stay the whole time. Stay for a couple of hours and do something awesome!</span>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_2">
+                    <h3 class="faq_question">Is this a hackathon?</h3>
+                    <br>
+                    <span class="faq_answer">No, but it can be if you want it to be. It's a place and time for people to do anything that involves creativity! Do something awesome.</span>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_3">
+                    <h3 class="faq_question">What should I bring?</h3>
+                    <br>
+                    <span class="faq_answer">Anything that will help you do something awesome. Please adhere to our code of conduct (in registration)!</span>
+                    </div>
+                </div>
+            </div>
+            <img id='to-activities' class='arrow' src='assets/arrows/arrow1.png'/>
+        </div>
+    </section>
 
-	<section id='register' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero3.jpg">
-		<div>
-			<img class='icon' src='assets/section_icons/register.png'/>
-			<h2>READY TO PARTICIPATE?</h2>
-			<a href='https://slacfest.typeform.com/to/rgKmrD' class='reg-button'>Register on Typeform</a>
-		</div>
-	</section>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="scripts/parallax.min.js"></script>
-	<script src="scripts/easyscroll.js"></script>
+    <section id='activities' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero3.jpg">
+        <div>
+        <img class='icon' src='assets/section_icons/activities.png'/>
+        <h2>ACTIVITIES</h2>
+            <div class="grid grid-pad">
+                <div class="col-1-7">
+                   <div class="content" id="battlebots">
+                       <img class="activity_icon" src="assets/activity/Battlebots.png">
+                       <h3 class="activity_leader">REVO</h3>
+                       <h3 class="activity_name">BATTLEBOTS</h3>
+                       <br><br><br>
+                       <h3>Design, Build, <br>and Battle minibots</h3>
+                   </div>
+                </div>
+                <div class="col-1-7">
+                   <div class="content" id="knitting">
+                       <img class="activity_icon" src="assets/activity/Knitting.png">
+                       <h3 class="activity_leader">KNITTING CLUB</h3>
+                       <h3 class="activity_name">KNITTING SCARVES<br> + HATS </h3><br>
+                       <h3>Create your <br>very own <br>scarves and hats</h3>
+                   </div>
+                </div>
+                <div class="col-1-7">
+                   <div class="content" id="connections">
+                       <img class="activity_icon"  src="assets/activity/Connections.png">
+                       <h3 class="activity_leader">GREG MARRA</h3>
+                       <h3 class="activity_name">OLIN CONNECTIONS</h3><br><br>
+                       <h3>Better student, alumni, and community communication</h3>
+                   </div>
+                </div>
+
+                <div class="col-1-7">
+                   <div class="content" id="moborobo">
+                       <img class="activity_icon"  src="assets/activity/MoboRobo.png">
+                       <h3 class="activity_leader">PAUL RUVOLO</h3>
+                       <h3 class="activity_name">MOBILE ROBOTICS</h3> <br><br>
+                       <h3>Combining Awesome Robots and Mobile Devices</h3>
+                   </div>
+                </div>
+                <div class="col-1-7">
+                   <div class="content" id="tables">
+                       <img class="activity_icon"  src="assets/activity/Table.png">
+                       <h3 class="activity_leader">SARA HENDREN</h3>
+                       <h3 class="activity_name">CARDBOARD TABLE <br>DESIGN</h3><br>
+                       <h3>Design Wedding Tables</h3>
+                   </div>
+                </div>
+
+                <div class="col-1-7">
+                   <div class="content" id="dinner">
+                       <img class="activity_icon"  src="assets/activity/Dinner.png">
+                       <h3 class="activity_leader">ANNIE - MARY - INGRID</h3>
+                       <h3 class="activity_name">COMMUNAL DINNER</h3><br><br>
+                       <h3>Create a <br> extraordinary meal for <br> everyone</h3>
+                   </div>
+                </div>
+
+                <div class="col-1-7">
+                   <div class="content" id="tshirts">
+                       <img class="activity_icon"  src="assets/activity/Tshirts.png">
+                       <h3 class="activity_leader">JEFF GOLDENSON</h3>
+                       <h3 class="activity_name">T-SHIRTS AND MORE</h3><br><br>
+                       <h3>T-Shirt Printing, Fun Build Kits, Inflatable Mylar Rooms</h3>
+                   </div>
+                </div>
+            </div>
+            <img id='to-sponsors' class='arrow' src='assets/arrows/arrow5.png'/>
+        </div>
+    </section>
+    <section id='sponsors'>
+        <div>
+            <img class='icon' src='assets/section_icons/sponsors.png'/>
+            <h2 id="darkfont">OUR SPONSORS</h2>
+            <table>
+                <tr>
+                    <td class="sponsor-logo left"><a target="_blank" href="http://www.microsoft.com/en-us/default.aspx"><img id="microsoft-logo" class = "sponsor" src="assets/sponsors/MSFT.png"/></a></td>
+                    <td class="sponsor-logo right"><a target="_blank" href="http://roughdraft.vc/"><img id="rdv-logo" class = "sponsor" src="assets/sponsors/rdv.png"/></a></td>
+                </tr>
+                <tr>
+                    <td class="sponsor-logo left"><a target="_blank" href="http://pivotallabs.com/"><img id="pivotal-logo" class = "sponsor" src="assets/sponsors/pivotal.png"/></a></td>
+                    <td class="sponsor-logo right"><a target="_blank" href="https://tessel.io/"><img id="tm-logo" class = "sponsor" src="assets/sponsors/TM.png"/></a></td>
+                </tr>
+                <tr>
+                    <td class="sponsor-logo left"><a target="_blank" href="http://olinfoundry.org/"><img class = "sponsor" src="assets/sponsors/foundry.png"/></a></td>
+                    <td class="sponsor-logo right"><a target="_blank" href="http://www.olin.edu/"><img class = "sponsor" src="assets/sponsors/olin.png"/></a></td>
+                </tr>
+            </table>
+            <img id='to-register' class='arrow' src='assets/arrows/arrow6.png'/>
+        </div>
+    </section>
+
+    <section id='register' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero4.jpg">
+        <div>
+            <img class='icon' src='assets/section_icons/register.png'/>
+            <h2>READY TO PARTICIPATE?</h2>
+            <a href='https://slacfest.typeform.com/to/rgKmrD' class='reg-button'>Register on Typeform</a>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/easyscroll.js"></script>
 </body>
 </html>

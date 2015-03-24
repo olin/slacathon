@@ -71,7 +71,11 @@ img {
 }
 
 #splash {
-	padding: 2em;
+	padding: 2em 5em;
+    padding-bottom: 100px
+}
+#what-is {
+    margin-top:10px;
 }
 #what-is div {
 	background: url('../assets/backdrops/whatisslacfest_opaque.png');
@@ -80,17 +84,30 @@ img {
 #schedule div {
 	position: relative;
 	top: 15%;
-	background: url('../assets/backdrops/schedule_transluscent.png');
+	/*background: url('../assets/backdrops/schedule_transluscent.png');*/
 	padding: 2em 5em;
 }
 #sponsors div {
 	background: url('../assets/backdrops/sponsors_opaque.png');
 	padding: 2em 5em;
 }
+
+#activities {
+    padding: 6em 5em;
+}
+
+#faq {
+    background: #292929;
+    padding:2em 5em;
+}
+
+#faq_id {
+    margin-bottom:-20px;
+}
+
 #register > div {
 	position: relative;
 	top: 20%;
-	background: url('../assets/backdrops/register_transluscent.png');
 	padding: 2em 5em 6em;
 }
 
@@ -130,7 +147,7 @@ a.reg-button {
 	color: black;
 }
 .arrow {
-  margin-top: 3em;
+  margin-top: 2em;
   width: 3em;
 }
 .arrow:hover {
@@ -141,8 +158,54 @@ a.reg-button {
 }
 
 .schedule {
-	margin: auto;
-	border-spacing: 100px 10px
+    margin: auto;
+    border-spacing: 100px 10px
+}
+
+.activity_name {
+    font-size: 15px;
+    padding:5px;
+}
+
+.activity_leader {
+    font-size: 10px;
+    padding:5px;
+}
+
+.activity_icon {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.content {
+    width: 95%;
+    height:300px;
+    border: 1px black solid;
+    margin:auto;
+    padding:0;
+}
+
+#battlebots {
+    border: 3px #511C74 solid;
+}
+#knitting {
+    border: 3px #30AAA4 solid;
+}
+#connections {
+    border: 3px #349E49 solid;
+}
+#moborobo {
+    border: 3px #CF1D39 solid;
+}
+#tables {
+    border: 3px #F47920 solid;
+}
+#dinner {
+    border: 3px #8FBC48 solid;
+}
+
+#tshirts {
+    border: 3px #7F2727 solid;
 }
 
 .time {
@@ -198,6 +261,31 @@ table {
     color: black;
     /*font-size: xx-large;*/
 }
+.faq_content {
+    background-color: #d9d9d9;
+    height: 200px;
+    margin: 10px;
+    padding:15px;
+}
+.faq_question {
+    font-size: 20px;
+    color: black;
+    padding: 10px
+}
 
+.faq_answer {
+    font-size: 15px;
+    color:#535353;
+}
 
+#faq_1 {
+    border: 4px solid #009BDF;
+}
 
+#faq_2 {
+    border: 4px solid #CF1D39;
+}
+
+#faq_3 {
+    border: 4px solid #349E49;
+}
