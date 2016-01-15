@@ -99,7 +99,7 @@ img {
 
 #faq {
     background: #292929;
-    padding:2em 5em;
+    padding:2em 5em;	
 }
 
 #faq_id {
@@ -110,6 +110,7 @@ img {
 	position: relative;
 	top: 20%;
 	padding: 2em 5em 6em;
+	background: #511C74;
 }
 
 #contact {
@@ -152,6 +153,10 @@ p.mission {
 	border-width: 2px;
 	border-radius: 8px;
 	border-color: #FFFFFF;
+}
+
+footer {
+	background-color: #0E1717; 
 }
 
 a.reg-button {
