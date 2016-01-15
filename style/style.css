@@ -61,9 +61,10 @@ img {
 }
 
 .logo {
-    width:120px;
-    height:120px;
-}
+    width:400px;
+    height: auto;
+	
+	}
 .parallax-window {
 	height: 100%;
 	min-height: 46em;
@@ -111,11 +112,23 @@ img {
 	padding: 2em 5em 6em;
 }
 
+#contact {
+	background: #292929;
+	padding: 2em 5em;
+}
+
 h2 {
   padding: 1em;
   font-weight: 800;
   font-size: 2.4em;
   letter-spacing: 0.1em;
+}
+
+h3 {
+	padding: 0.5em;
+	font-weight: 500;
+	font-size: 1.8em;
+	letter-spacing: 0.05em;
 }
 a {
   color: inherit; /* blue colors for links too */
@@ -131,6 +144,14 @@ p {
 p.main-par {
 	word-spacing: 1px;
 	font-size: 1.35em;
+}
+p.mission {
+	word-spacing: 1px;
+	font-size: 1.5em;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	border-color: #FFFFFF;
 }
 
 a.reg-button {
@@ -266,18 +287,18 @@ table {
 }
 .faq_content {
     background-color: #d9d9d9;
-    height: 200px;
+    height: 300px;
     margin: 10px;
     padding:15px;
 }
 .faq_question {
     font-size: 20px;
     color: black;
-    padding: 10px
+    padding: 10px	
 }
 
 .faq_answer {
-    font-size: 15px;
+    font-size: 18px;
     color:#535353;
 }
 
