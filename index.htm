@@ -1,59 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<link href='style/style.css' rel='stylesheet'/>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="scripts/parallax.min.js"></script>
-	
-	<title>SLACTFEST | Olin College of Engineering</title>
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/stay_late_create/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='style/style.css' rel='stylesheet'/>
+    <link href='style/grid.css' rel='stylesheet'/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script>
+        $(document).ready(function (){
+
+            function scrollTo(nextId){
+                $('html, body').animate({
+                    scrollTop: $(nextId).offset().top
+                }, 1000);
+            }
+            function scrollToAdjust(nextId){
+                //Getting location of the element minus the height offset to center
+                var adjust = $(nextId).offset().top - $(window).height() * 0.2;
+                $('html, body').animate({
+                    scrollTop: adjust
+                }, 1000);
+            }
+
+            $("#to-what-is").click(function() {
+                scrollToAdjust("#what-is");
+            });
+            $('#to-activities').click(function() {
+                scrollTo("#activities");
+            });
+            $('#to-faq').click(function() {
+                scrollToAdjust("#faq");
+            });
+            $("#to-schedule").click(function() {
+                scrollTo("#schedule");
+            });
+            $("#to-sponsors").click(function() {
+                scrollToAdjust("#sponsors");
+            });
+            $("#to-register").click(function() {
+                scrollTo("#register");
+            });
+        });
+    </script>
+
+    <title>SLAC | Olin College of Engineering</title>
 </head>
 <body>
-	
-	<section id='splash' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero1.jpg">
-		<img src='assets/small_logo/logo120x120.png'/>
-		<p>PRESENTS</p>
-		<img src='assets/stay_late_create/stay-late-create.png'/>
-		<img src='assets/slacfest_title/SlacFestwithLines.png'/>
-		<p>MARCH 28, 2015<br>8AM TO MIDNIGHT</p>
-		<div class='reg-button'></div>
-		<img class='arrow' src='assets/arrows/arrow1.png'/>
-	</section>
-	
-	
-	<section id='what-is'>
-		<div>
-			<img class='icon' src='assets/section_icons/whatisslacfest.png'/>
-			<h2>WHAT IS SLACFEST?</h2>
-			<p>SLACfest is Olin College’s first official design, hacking, and making marathon, hosted by Olin’s dedicated Stay Late And Create (SLAC) student organization. SLAC is passionate about providing opportunities for people to come together and fostering new ideas and projects. In the spirit of SLAC, this first SLACfest will be focused on community building.</p>
-			<img class='arrow' src='assets/arrows/arrow2.png'/>
-		</div>
-	</section>
-	
-	<section id='schedule' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero2.jpg">
-		<div>
-			<img class='icon' src='assets/section_icons/schedule.png'/>
-			<h2>SCHEDULE:</h2>
-			<img class='arrow' src='assets/arrows/arrow3.png'/>
-		</div>
-	</section>
-	
-	<section id='sponsers'>
-		<div>
-			<img class='icon' src='assets/section_icons/sponsors.png'/>
-			<h2>OUR SPONSORS:</h2>
-			<img class='arrow' src='assets/arrows/arrow4.png'/>
-		</div>
-	</section>
 
-	<section id='register' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero3.jpg">
-		<div>
-			<img class='icon' src='assets/section_icons/register.png'/>
-			<h2>READY TO PARTICIPATE?</h2>
-			<div class='reg-typeform-button'></div>
-		</div>
-	</section>
-	
-</body>	
+    <section id='splash' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero1.jpg">
+        <img class="logo" src='assets/small_logo/logo960x960.png'/>
+        <img src='assets/stay_late_create/stay-late-create.png'/>
+        <br>
+        <h3>Our Mission:</h3>
+        <p class="mission">SLAC creates a collaborative space and environment to foster Olin&#39;s project-based culture.</p>
+
+        <img id='to-what-is' class='arrow' src='assets/arrows/arrow1.png'/>
+    </section>
+
+
+    <section id='what-is'>
+        <div>
+            <img class='icon' src='assets/section_icons/whatisslacfest.png'/>
+            <h2>WHAT WE DO?</h2>
+            <p class='main-par'>SLAC hosts weekly gatherings in Olin&#39;s library, building community around tutorials, workshops, and group project meetings. In this collaborative environment, students also have the opportunity to connect with and learn from peers. In addition, we put on an annual festival of creativity, SLACFest, which is an all-day event that brings students together in the spirit of creation. Students, faculty, and alumni come together to engage in activities ranging from knitting and communal cooking to robotics and 3D printing.</p>
+            <img id='to-schedule' class='arrow' src='assets/arrows/arrow2.png'/>
+        </div>
+    </section>
+
+    <section id='schedule' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero2.jpg">
+        <div>
+            <h2>SLACFEST</h2>
+            <h3>Coming Friday April 29th, 2016</h3>
+            <p class="main-par">Last year, we started the tradition of SLACFest, our annual festival of creativity. Over 300 students, faculty, and alumni all came together for an entire day dedicated to fostering the spirit of creativity at Olin. Workshops ranging from cardboard furniture creation to alumni tech talks to screenprinting were spread out through the day, along with personal projects on the side. The day culminated with a communal dinner created by attendees and project exposition showcasing Olin&#39;s best.</p>
+            <p class="main-par">This year, SLACfest is back on April 29th. Stay tuned for details!</p>
+            <img id='to-faq' class='arrow' src='assets/arrows/arrow7.png'/>
+        </div>
+    </section>
+
+    <section id='faq'>
+        <div>
+            <h2 id="faq_id">Success Stories</h2>
+            <div class="grid grid-pad">
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_1">
+                    <h3 class="faq_question">MarCom Logo Rebranding</h3>
+                    <br>
+                    <span class="faq_answer">Instead of going to a professional agency, Olin administration came to SLAC offering students a creative opportunity. SLACers had a chance to redesign the outdated Olin Phoenix seal. At SLAC, students worked together at a 'sketch-a-thon' to ideate a new phoenix designs and be a part of Olin history.</span>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_2">
+                    <h3 class="faq_question">Atmega Programming Tutorial</h3>
+                    <br>
+                    <span class="faq_answer">Byron, a current sophomore, wanted to teach students about programming the Atmega microprocessor with raw C code. The tutorial was initially planned for a smaller session, but we brought it to SLAC to broaden the audience. In one of SLAC's most successful tutorials, students explored an area of embedded programming in a supportive and engaging space.</span>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="faq_content" id="faq_3">
+                    <h3 class="faq_question">Web Scraping with Python</h3>
+                    <br>
+                    <span class="faq_answer">As the author of a published book on Python Web Scraping, Olin alumna Ryan Mitchell led an exciting tutorial on how to access and process data from the web using Python! Students coded along to live programming demos. She also had a book signing and distribution after her tutorial, a huge hit! </span>
+                    </div>
+                </div>
+            </div>
+            <img id='to-activities' class='arrow' src='assets/arrows/arrow1.png'/>
+        </div>
+    </section>
+
+    <section id='activities' class="parallax-window" data-parallax="scroll" data-image-src="assets/hero_imgs/hero3.jpg">
+        <div>
+        <h2>WEEKLY MEETINGS </h2>
+        <h3>WEDNESDAYS</h3> <br>
+        <h3>IN THE LIBRARY</h3> <br>
+        <h3>8:00PM - LATE</h3> <br>
+        <h3>SNACKS PROVIDED!</h3>
+            <img id='to-register' class='arrow' src='assets/arrows/arrow5.png'/>
+        </div>
+    </section>
+
+    <section id='register' >
+        <div>
+            <img class='icon' src='assets/section_icons/whatisslacfest.png'/>
+            <h2>QUESTIONS? SPONSORSHIP?</h2>
+            <a href="mailto:patrick.huston@students.olin.edu" class='reg-button'>Contact Us</a><br><br>
+        </div>
+    </section>
+    <footer class='foot'>
+    	 <p>Copyright &copy; slac.io | Olin College of Engineering</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/easyscroll.js"></script>
+</body>
 </html>

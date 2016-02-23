@@ -1,6 +1,6 @@
-/* 
+/*
  *  RESET THE BROWSER TO UNIFORM
- *  http://meyerweb.com/eric/tools/css/reset/ 
+ *  http://meyerweb.com/eric/tools/css/reset/
  *  v2.0 | 20110126
  *  License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,10 +26,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+html {
+	background:black;
+}
+
 html, body {
 	height: 100%;
 }
@@ -47,13 +52,19 @@ ol, ul {
 
 body {
 	color: white;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Montserrat', Helvetica, sans-serif;
 	text-align: center;
 }
 img {
 	display:block;
 	margin: 0 auto;
 }
+
+.logo {
+    width:400px;
+    height: auto;
+	
+	}
 .parallax-window {
 	height: 100%;
 	min-height: 46em;
@@ -61,7 +72,11 @@ img {
 }
 
 #splash {
-	padding: 2em;
+	padding: 2em 5em;
+  padding-bottom: 100px
+}
+#what-is {
+    margin-top:10px;
 }
 #what-is div {
 	background: url('../assets/backdrops/whatisslacfest_opaque.png');
@@ -69,18 +84,37 @@ img {
 }
 #schedule div {
 	position: relative;
-	top: 20%;
-	background: url('../assets/backdrops/schedule_transluscent.png');
+	top: 15%;
+	/*background: url('../assets/backdrops/schedule_transluscent.png');*/
 	padding: 2em 5em;
 }
-#sponsers div {
+#sponsors div {
 	background: url('../assets/backdrops/sponsors_opaque.png');
 	padding: 2em 5em;
 }
+
+#activities {
+    padding: 3em 5em;
+}
+
+#faq {
+    background: #292929;
+    padding:2em 5em;	
+}
+
+#faq_id {
+    margin-bottom:-20px;
+}
+
 #register > div {
 	position: relative;
 	top: 20%;
-	background: url('../assets/backdrops/register_transluscent.png');
+	padding: 2em 5em 6em;
+	background: #511C74;
+}
+
+#contact {
+	background: #292929;
 	padding: 2em 5em;
 }
 
@@ -91,42 +125,196 @@ h2 {
   letter-spacing: 0.1em;
 }
 
+h3 {
+	padding: 0.5em;
+	font-weight: 500;
+	font-size: 1.8em;
+	letter-spacing: 0.05em;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit;
+}
 p {
   padding: 1em 0;
-  letter-spacing: 0.1em;
-  line-height: 1.1em;
+  line-height: 1.2em;
+  word-spacing: 5px;
   font-size: 1.2em;
+  font-weight: 100;
+}
+p.main-par {
+	word-spacing: 1px;
+	font-size: 1.35em;
+}
+p.mission {
+	word-spacing: 1px;
+	font-size: 1.5em;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 8px;
+	border-color: #FFFFFF;
 }
 
-.reg-button {
-	background: url('../assets/register_buttons/Register Button Default.png') no-repeat;
-	margin: 1em auto 0;
-	background-size: 15em 2.5em;
-	width: 15em;
-	height: 2.5em;
+footer {
+	background-color: #0E1717; 
+}
+
+a.reg-button {
+  display: inline-block;
+  margin-top: 0.4em;
+  padding: 0.5em 2.2em;
+  font-size: 1.2em;
+  color: #FFDD55;
+  text-decoration: none;
+  border: #FFDD55 1px solid;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 .reg-button:hover {
-	background: url('../assets/register_buttons/Register-Button-Hover.png') no-repeat;
-	background-size: 15em 2.5em;
+	background: #FFDD55;
 	cursor: pointer;
-}
-.reg-typeform-button {
-	  background: url('../assets/register_buttons/Register-on-typeform.png') no-repeat;
-	  margin: 1em auto 0;
-	  background-size: 19em 2.3em;
-	  width: 19em;
-	  height: 2.5em;
-}
-.reg-typeform-button:hover {
-	background: url('../assets/register_buttons/Register-on-typeform-hover.png') no-repeat;
-	background-size: 19em 2.3em;
-	cursor: pointer;
+	color: black;
 }
 .arrow {
-  margin-top: 3em;
+  margin-top: 2em;
   width: 3em;
+}
+.arrow:hover {
+	cursor: pointer;
 }
 .icon {
 	width: 3em;
 }
 
+.schedule {
+    margin: auto;
+    border-spacing: 100px 10px
+}
+
+.activity_name {
+    font-size: 15px;
+    padding:5px;
+}
+
+.activity_leader {
+    font-size: 10px;
+    padding:5px;
+}
+
+.activity_icon {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.content {
+    width: 95%;
+    height:300px;
+    border: 1px black solid;
+    margin:auto;
+    padding:0;
+}
+
+#battlebots {
+    border: 3px #511C74 solid;
+}
+#knitting {
+    border: 3px #30AAA4 solid;
+}
+#connections {
+    border: 3px #349E49 solid;
+}
+#moborobo {
+    border: 3px #CF1D39 solid;
+}
+#tables {
+    border: 3px #F47920 solid;
+}
+#dinner {
+    border: 3px #8FBC48 solid;
+}
+
+#tshirts {
+    border: 3px #7F2727 solid;
+}
+
+.time {
+	font-size: 1.5em;
+	text-align: right;
+	text-transform:uppercase;
+}
+
+.title {
+	font-size: 1.5em;
+	text-align: left;
+	text-transform:uppercase;
+}
+
+table {
+	margin: auto;
+}
+
+.sponsor-logo {
+	vertical-align: middle;
+	align: center;
+}
+
+.sponsor {
+    height: 20%;
+    width: auto;
+    padding:10px;
+}
+
+@-moz-document url-prefix() {
+    .sponsor {
+        height: 50px;
+    }
+}
+
+#microsoft-logo {
+    height: 70px;
+}
+
+#rdv-logo {
+	height:100px;
+}
+
+#pivotal-logo {
+    height:100px;
+}
+
+#tm-logo {
+    height: 100px;
+}
+
+#darkfont {
+    color: black;
+    /*font-size: xx-large;*/
+}
+.faq_content {
+    background-color: #d9d9d9;
+    height: 300px;
+    margin: 10px;
+    padding:15px;
+}
+.faq_question {
+    font-size: 20px;
+    color: black;
+    padding: 10px	
+}
+
+.faq_answer {
+    font-size: 18px;
+    color:#535353;
+}
+
+#faq_1 {
+    border: 4px solid #009BDF;
+}
+
+#faq_2 {
+    border: 4px solid #CF1D39;
+}
+
+#faq_3 {
+    border: 4px solid #349E49;
+}
