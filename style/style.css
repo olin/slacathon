@@ -60,6 +60,16 @@ img {
 	margin: 0 auto;
 }
 
+.web-banner {
+  width: 60vw;
+  height: auto;
+}
+
+.workshop {
+  width: 480px;
+  height: auto;
+}
+
 .logo {
     width:400px;
     height: auto;
@@ -68,7 +78,14 @@ img {
 .parallax-window {
 	height: 100%;
 	min-height: 46em;
-    background: transparent;
+  background: transparent;
+}
+
+#workshops-container {
+
+  background-color: #a3a3a3;
+  padding:2em 5em;  
+
 }
 
 #splash {
