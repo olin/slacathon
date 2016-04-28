@@ -101,9 +101,7 @@ img {
 }
 #schedule div {
 	position: relative;
-	top: 15%;
 	/*background: url('../assets/backdrops/schedule_transluscent.png');*/
-	padding: 2em 5em;
 }
 #sponsors div {
 	background: url('../assets/backdrops/sponsors_opaque.png');
