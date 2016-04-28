@@ -65,9 +65,21 @@ img {
   height: auto;
 }
 
+.calendar-web {
+
+  width: 70vw;
+  height: auto;
+
+}
+
+.workshop-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .workshop {
   width: 480px;
-  height: auto;
+  height: 621px;
 }
 
 .logo {
@@ -83,9 +95,13 @@ img {
 
 #workshops-container {
 
-  background-color: #a3a3a3;
+  background-color: #B0BEC5;
   padding:2em 5em;  
 
+}
+
+#calendar {
+  background-color: #000080;
 }
 
 #splash {
@@ -136,7 +152,7 @@ img {
 h2 {
   padding: 1em;
   font-weight: 800;
-  font-size: 2.4em;
+  font-size: 3em;
   letter-spacing: 0.1em;
 }
 
@@ -160,6 +176,7 @@ p {
 p.main-par {
 	word-spacing: 1px;
 	font-size: 1.35em;
+  padding: 0 2vw 0 2vw; 
 }
 p.mission {
 	word-spacing: 1px;
